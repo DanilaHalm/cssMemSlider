@@ -147,23 +147,18 @@ body {
     transition: background-color ease-in-out 0.5s;
     }
   .control label:hover {
-    animation: hovercolor 2s infinite;   
+      background-color: black;
     }
-    @keyframes hovercolor {
-        0% {
-            background-color: gold;
-        }
-        50% {
-            background-color: black;
-        }
-        100% {
-            background-color: gold;
-        }
+
+.control label:active {
+    background-color: aqua;
     }
-  .control label:after {
-    border: 0.1rem solid blue;
-    }
-  .controllabel:hover, 
+.label-div {
+    margin: -0.5rem 0 0 -0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+      
   #slide1:checked ~ .slider-control > .control > label:nth-of-type(1),
   #slide2:checked ~ .slider-control > .control > label:nth-of-type(2),
   #slide3:checked ~ .slider-control > .control > label:nth-of-type(3),
